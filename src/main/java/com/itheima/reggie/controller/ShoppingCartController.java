@@ -44,7 +44,6 @@ public class ShoppingCartController {
         if(dishId != null){
             //添加到购物车的是菜品
             queryWrapper.eq(ShoppingCart::getDishId,dishId);
-
         }else{
             //添加到购物车的是套餐
             queryWrapper.eq(ShoppingCart::getSetmealId,shoppingCart.getSetmealId());
